@@ -16,7 +16,7 @@
     </header>
 </head>
 <body>
-        <main class="container">size="11"
+        <main class="container">
             <div class="inputbox">
                 <input type="text" id="nome" placeholder="Digite seu Nome Completo " required >
                 <label for="nome">Nome:</label>
@@ -71,10 +71,12 @@
        <div class="row">
                <button id="btn">Cadrastrar</button>
             </div>
+    <asset:javascript src="javascript/JS/index.js"/>
+    
     <footer>
         Manoela LTDA.
      </footer>
-<asset:javascript src="index.js"/>
+
 
 
 

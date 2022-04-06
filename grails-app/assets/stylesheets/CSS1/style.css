@@ -1,5 +1,82 @@
 
 :root {
     --bg-color: #002cbe;
-    --primary-color: #FFFFFF;
+    --primary-color: #f2f2f2;
 }
+
+#banner { 
+width: 10%;
+position: top;
+
+
+
+}
+.titulo{
+    color: var(--primary-color);
+    font-size: 25px; 
+    text-align: center;
+}
+body {
+    font-size: 10px;
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--bg-color) ;
+   /* background-image: url(../logo-asaas-azul.png);*/
+    background-repeat: no-repeat
+}
+
+.container{ 
+    width: 20%;
+    padding: 5px;}
+
+.row {
+align-self: baseline;
+align-self: center;
+
+
+  
+}*/
+.inputbox {
+    position: center;
+    display: block;
+    height: 25px;
+    padding: 12px;
+
+}
+
+.inputbox label {
+    position: center;
+    top:0;
+    left: 10px;
+    font-size: 14px;
+    color: var(--primary-color);
+    cursor: text;
+    padding: 5px;
+}
+
+.inputbox input {
+    position: center;
+    background-color: var(--primary-color);
+    width: 100%;
+    bottom: 0;
+    box-shadow: none;
+    border: 20px;
+    outline: none;
+    border-radius: 2px;
+    font-size: 20px;
+
+}
+
+#btn-apply{
+   background-color: rgb(35, 109, 35);
+    width: 200px;
+    height:50px;
+    font-size: 20px;    
+    top:0%;
+    left:50%;
+    right: 50%;
+    bottom: 100%;
+    padding: 15px;
+}  

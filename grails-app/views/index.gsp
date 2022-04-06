@@ -3,80 +3,74 @@
 <head>
     <meta name="layout" content="main"/>  
     <title>  Cadrastro de Clientes </title>
-    <asset:stylesheet src="style.css"/>
+    <asset:stylesheet src="CSS1/style.css"/>    
+    <asset:image class= "banner" id="banner" src="logo-asaas-azul.png"/> 
+ 
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <h2 class="titulo">Cadrasto aaaaaaaaaaaaaaaaaaaaaa</h2>
+            <h2 class="titulo"> Cadrasto de Clientes </h2>
         </div>
-        <asset:image id="banner" src="logo-asaas-azul.png"/> 
 
     </header>
 </head>
 <body>
         <main class="container">
-            <div class="inputbox">
+            <div class="inputbox">   
+            <label for="nome">Nome:</label>
                 <input type="text" id="nome" placeholder="Digite seu Nome Completo " required >
-                <label for="nome">Nome:</label>
             </div>
-
-            <div class="inputbox">
-                <input type="text" id="email"placeholder="Digite seu E-mail" required>
+            <div class="inputbox">            
                 <label for="email">Email:</label>
+                <input type="text" id="email"placeholder="Digite seu E-mail" required>
+
             </div>
 
-            <div class="inputbox">
-                <input type="text"  id="telefone"placeholder="Digite seu Telefone" required >
+            <div class="inputbox">     
                 <label for="telefone">Telefone:</label>     
+                <input type="text"  id="telefone"placeholder="Digite seu Telefone" required >
+                
+                <div class="inputbox">  
+                <label for="cep">Data de Nascimento:</label>
+                <input type="date" id="data-nas" >
             <div class="row">
             
-                <div class="inputbox">
-                <input type="text" id="cep"  placeholder="Digite seu CEP"required>
+                <div class="inputbox">  
                 <label for="cep">CEP:</label>
+                <input type="text" id="cep"  placeholder="Digite seu CEP"required>              
             </div>
-
-            <div class="inputbox">
-
-                <input type="text" id="endereco"  required>
+            <div class="inputbox">  
                 <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco"  required>
+              
             </div>
-
             <div class="inputbox">
-
-                <input type="text" id="numero"   required>
                 <label for="numero">Número:</label>
+                <input type="text" id="numero"   required>
+                
             </div>
-
             <div class="inputbox">
-
-                <input type="text" id="bairro"   required>
                 <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro"   required>
+             
             </div>
 
             <div class="inputbox">
-
-                <input type="text" id="cidade"  required>
                 <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade"  required>
+            
             </div>
-
             <div class="inputbox">
-
-                <input type="text" id="estado"  required>
                 <label for="estado">Estado:</label>
-            </div>
-    
+                <input type="text" id="estado"  required>
+        
+            </div>   
     </main> 
        <div class="row">
-               <button id="btn">Cadrastrar</button>
+               <button id="btn-apply">Cadrastrar</button>
             </div>
-    <footer>
-        Manoela LTDA.
-     </footer>
-
-<asset:javascript src="javascript/JS/index.js"/>
-
+    <asset:javascript src="JS/index.js"/>
 
 </body>
 
