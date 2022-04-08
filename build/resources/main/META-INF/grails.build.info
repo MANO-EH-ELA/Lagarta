@@ -1,0 +1,6 @@
+#Thu, 31 Mar 2022 14:51:43 -0300
+
+info.app.version=0.1
+info.app.name=Lagarta
+grails.env=development
+info.app.grailsVersion=4.0.12
