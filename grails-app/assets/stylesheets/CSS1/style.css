@@ -56,7 +56,7 @@ align-self: center;
     padding: 5px;
 }
 
-.inputbox input {
+.inputbox input { 
     position: center;
     background-color: var(--primary-color);
     width: 100%;

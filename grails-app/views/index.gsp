@@ -21,7 +21,7 @@
                 <input type="text" id="nome" placeholder="Digite seu Nome Completo " required >
             </div>
             <div class="inputbox">            
-                <label for="email">Email:</label>
+                <label for="email">Email: </label>
                 <input type="text" id="email"placeholder="Digite seu E-mail" required>
 
             </div>
