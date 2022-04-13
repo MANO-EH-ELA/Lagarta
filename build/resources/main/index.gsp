@@ -1,77 +1,75 @@
 <!doctype html>
 <html>
 <head>
-    <meta name="layout" content="main"/>
-    <title>Welcome to Grails</title>
+    <meta name="layout" content="main"/>  
+    <title>  Cadrastro de Clientes </title>
+    <asset:stylesheet src="CSS1/style.css"/>    
+    <asset:image class= "banner" id="banner" src="logo-asaas-azul.png"/> 
+ 
 </head>
 <body>
-<content tag="nav">
-    <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Application Status <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-            <li class="dropdown-item"><a href="#">Environment: ${grails.util.Environment.current.name}</a></li>
-            <li class="dropdown-item"><a href="#">App profile: ${grailsApplication.config.grails?.profile}</a></li>
-            <li class="dropdown-item"><a href="#">App version:
-                <g:meta name="info.app.version"/></a>
-            </li>
-            <li role="separator" class="dropdown-divider"></li>
-            <li class="dropdown-item"><a href="#">Grails version:
-                <g:meta name="info.app.grailsVersion"/></a>
-            </li>
-            <li class="dropdown-item"><a href="#">Groovy version: ${GroovySystem.getVersion()}</a></li>
-            <li class="dropdown-item"><a href="#">JVM version: ${System.getProperty('java.version')}</a></li>
-            <li role="separator" class="dropdown-divider"></li>
-            <li class="dropdown-item"><a href="#">Reloading active: ${grails.util.Environment.reloadingAgentEnabled}</a></li>
-        </ul>
-    </li>
-    <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Artefacts <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-            <li class="dropdown-item"><a href="#">Controllers: ${grailsApplication.controllerClasses.size()}</a></li>
-            <li class="dropdown-item"><a href="#">Domains: ${grailsApplication.domainClasses.size()}</a></li>
-            <li class="dropdown-item"><a href="#">Services: ${grailsApplication.serviceClasses.size()}</a></li>
-            <li class="dropdown-item"><a href="#">Tag Libraries: ${grailsApplication.tagLibClasses.size()}</a></li>
-        </ul>
-    </li>
-    <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Installed Plugins <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-            <g:each var="plugin" in="${applicationContext.getBean('pluginManager').allPlugins}">
-                <li class="dropdown-item"><a href="#">${plugin.name} - ${plugin.version}</a></li>
-            </g:each>
-        </ul>
-    </li>
-</content>
-
-<div class="svg" role="presentation">
-    <div class="grails-logo-container">
-        <asset:image src="grails-cupsonly-logo-white.svg" class="grails-logo"/>
-    </div>
-</div>
-
-<div id="content" role="main">
-    <section class="row colset-2-its">
-        <h1>Welcome to Grails</h1>
-
-        <p>
-            Congratulations, you have successfully started your first Grails application! At the moment
-            this is the default page, feel free to modify it to either redirect to a controller or display
-            whatever content you may choose. Below is a list of controllers that are currently deployed in
-            this application, click on each to execute its default action:
-        </p>
-
-        <div id="controllers" role="navigation">
-            <h2>Available Controllers:</h2>
-            <ul>
-                <g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
-                    <li class="controller">
-                        <g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link>
-                    </li>
-                </g:each>
-            </ul>
+    <header>
+            <h2 class="titulo"> Cadrasto de Clientes </h2>
         </div>
-    </section>
-</div>
+
+    </header>
+</head>
+<body>
+        <main class="container">
+            <div class="inputbox">   
+            <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Digite seu Nome Completo " required >
+            </div>
+            <div class="inputbox">            
+                <label for="email">Email: </label>
+                <input type="text" id="email"placeholder="Digite seu E-mail" required>
+
+            </div>
+
+            <div class="inputbox">     
+                <label for="telefone">Telefone:</label>     
+                <input type="text"  id="telefone"placeholder="Digite seu Telefone" required >
+                
+                <div class="inputbox">  
+                <label for="cep">Data de Nascimento:</label>
+                <input type="date" id="data-nas" >
+            <div class="row">
+            
+                <div class="inputbox">  
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep"  placeholder="Digite seu CEP"required>              
+            </div>
+            <div class="inputbox">  
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco"  required>
+              
+            </div>
+            <div class="inputbox">
+                <label for="numero">Número:</label>
+                <input type="text" id="numero"   required>
+                
+            </div>
+            <div class="inputbox">
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro"   required>
+             
+            </div>
+
+            <div class="inputbox">
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade"  required>
+            
+            </div>
+            <div class="inputbox">
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado"  required>
+        
+            </div>   
+    </main> 
+       <div class="row">
+               <button id="btn-apply">Cadrastrar</button>
+            </div>
+    <asset:javascript src="JS/index.js"/>
 
 </body>
 </html>

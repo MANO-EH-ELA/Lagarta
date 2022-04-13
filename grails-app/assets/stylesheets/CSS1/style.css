@@ -3,13 +3,9 @@
     --bg-color: #002cbe;
     --primary-color: #f2f2f2;
 }
-
 #banner { 
 width: 10%;
 position: top;
-
-
-
 }
 .titulo{
     color: var(--primary-color);
@@ -26,26 +22,20 @@ body {
    /* background-image: url(../logo-asaas-azul.png);*/
     background-repeat: no-repeat
 }
-
 .container{ 
     width: 20%;
     padding: 5px;}
 
 .row {
-align-self: baseline;
-align-self: center;
-
-
-  
+    align-self: baseline;
+    align-self: center;  
 }*/
 .inputbox {
     position: center;
     display: block;
     height: 25px;
     padding: 12px;
-
 }
-
 .inputbox label {
     position: center;
     top:0;
@@ -55,7 +45,6 @@ align-self: center;
     cursor: text;
     padding: 5px;
 }
-
 .inputbox input { 
     position: center;
     background-color: var(--primary-color);
@@ -66,9 +55,7 @@ align-self: center;
     outline: none;
     border-radius: 2px;
     font-size: 20px;
-
 }
-
 #btn-apply{
    background-color: rgb(35, 109, 35);
     width: 200px;
